@@ -1,3 +1,4 @@
+/* whatsapp-style.css */
 * {
     margin: 0;
     padding: 0;
@@ -7,330 +8,278 @@
 :root {
     --primary: #25D366;
     --primary-dark: #128C7E;
-    --secondary: #128C7E;
     --dark: #075E54;
     --light: #DCF8C6;
     --white: #FFFFFF;
     --gray: #ECE5DD;
     --text: #333333;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     color: var(--text);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .container {
+    max-width: 400px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
 }
 
-/* Header Styles */
-header {
+.header {
     background: linear-gradient(135deg, var(--dark), var(--primary-dark));
     color: var(--white);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: var(--shadow);
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-icon {
-    width: 50px;
-    height: 50px;
-    background-color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: var(--primary);
-}
-
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--light);
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(7, 94, 84, 0.9), rgba(18, 140, 126, 0.8)), url('https://placehold.co/1200x600/075E54/FFFFFF?text=WhatsApp+Documentation') center/cover;
-    color: var(--white);
+    padding: 24px;
     text-align: center;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
+.header p {
+    font-size: 0.9rem;
     opacity: 0.9;
 }
 
-.btn {
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: var(--shadow);
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Features Section */
-.features {
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--dark);
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.feature-card {
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
     background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.feature-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 2rem;
-    color: white;
-}
-
-.feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--dark);
-}
-
-/* Documentation Section */
-.documentation {
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-}
-
-.docs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.doc-item {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    border-left: 4px solid var(--primary);
-}
-
-.doc-item h4 {
-    color: var(--dark);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.doc-item p {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-/* FAQ Section */
-.faq {
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-}
-
-.faq-item {
-    background: var(--white);
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.faq-question {
-    padding: 1.5rem;
-    background: var(--gray);
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-answer {
-    padding: 0 1.5rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.faq-answer.show {
-    padding: 1.5rem;
-    max-height: 500px;
-}
-
-/* Footer */
-footer {
-    background: var(--dark);
-    color: var(--white);
-    padding: 3rem 0 1.5rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-section h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-section a {
-    color: var(--light);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
+    margin: 0 auto 16px;
+    font-size: 28px;
     color: var(--primary);
 }
 
-.copyright {
-    text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--light);
+.form-container {
+    padding: 24px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        gap: 1rem;
-    }
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    position: relative;
+}
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.step-indicator::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gray);
+    z-index: 1;
+}
 
-    .hero h1 {
-        font-size: 2rem;
-    }
+.step {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
 
-    .hero p {
-        font-size: 1.1rem;
-    }
+.step.active {
+    background: var(--primary);
+    color: var(--white);
+}
 
-    .section-title {
-        font-size: 2rem;
-    }
+.step.completed {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.country-select {
+    margin-bottom: 20px;
+}
+
+.country-select label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.country-dropdown {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray);
+    border-radius: 12px;
+    font-size: 16px;
+    background: var(--white);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.country-dropdown:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.phone-input {
+    margin-bottom: 20px;
+}
+
+.phone-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.phone-input input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray);
+    border-radius: 12px;
+    font-size: 16px;
+    background: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+.phone-input input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.code-input {
+    margin-bottom: 20px;
+}
+
+.code-input label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+}
+
+.code-input p {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.code-input input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    background: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+.code-input input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #12b755;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: var(--gray);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    background: #d8d0c7;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.timer {
+    text-align: center;
+    margin-top: 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+.resend-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+.resend-link.active {
+    display: inline;
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 2rem 0;
+    .container {
+        margin: 10px;
     }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    nav a {
-        font-size: 0.9rem;
+    
+    .form-container {
+        padding: 20px;
     }
 }
