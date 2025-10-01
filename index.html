@@ -3,183 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>توثيق واتساب - دليل المستخدم الشامل</title>
-    <link rel="stylesheet" href="style.css">
+    <title>تسجيل واتساب - التحقق من الرقم</title>
+    <link rel="stylesheet" href="whatsapp-style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <div class="logo-icon">💬</div>
-                <div class="logo-text">توثيق واتساب</div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#features">الميزات</a></li>
-                    <li><a href="#documentation">التوثيق</a></li>
-                    <li><a href="#faq">الأسئلة</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <div class="header">
+            <div class="whatsapp-icon">💬</div>
+            <h1>واتساب</h1>
+            <p>المراسلة والاتصال مجانًا في أي مكان في العالم</p>
         </div>
-    </header>
+        
+        <div class="form-container">
+            <div class="step-indicator">
+                <div class="step active" id="step1">1</div>
+                <div class="step" id="step2">2</div>
+            </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>دليل توثيق واتساب الشامل</h1>
-            <p>كل ما تحتاج معرفته عن استخدام واتساب بشكل احترافي وآمن</p>
-            <a href="#documentation" class="btn">ابدأ التعلم الآن</a>
-        </div>
-    </section>
+            <!-- Step 1: Phone Number -->
+            <div class="form-step active" id="phoneStep">
+                <h2>أدخل رقم هاتفك</h2>
+                
+                <div class="country-select">
+                    <label for="country">الدولة</label>
+                    <select id="country" class="country-dropdown">
+                        <option value="+966">السعودية (+966)</option>
+                        <option value="+20">مصر (+20)</option>
+                        <option value="+971">الإمارات (+971)</option>
+                        <option value="+962">الأردن (+962)</option>
+                        <option value="+963">سوريا (+963)</option>
+                        <option value="+964">العراق (+964)</option>
+                        <option value="+965">الكويت (+965)</option>
+                        <option value="+974">قطر (+974)</option>
+                        <option value="+968">عُمان (+968)</option>
+                        <option value="+973">البحرين (+973)</option>
+                        <option value="+1">الولايات المتحدة (+1)</option>
+                        <option value="+44">المملكة المتحدة (+44)</option>
+                        <option value="+33">فرنسا (+33)</option>
+                        <option value="+49">ألمانيا (+49)</option>
+                        <option value="+39">إيطاليا (+39)</option>
+                        <option value="+81">اليابان (+81)</option>
+                        <option value="+86">الصين (+86)</option>
+                        <option value="+91">الهند (+91)</option>
+                        <option value="+7">روسيا (+7)</option>
+                        <option value="+55">البرازيل (+55)</option>
+                        <option value="+27">جنوب أفريقيا (+27)</option>
+                        <option value="+61">أستراليا (+61)</option>
+                        <option value="+1">كندا (+1)</option>
+                        <option value="+34">إسبانيا (+34)</option>
+                        <option value="+31">هولندا (+31)</option>
+                        <option value="+46">السويد (+46)</option>
+                        <option value="+47">النرويج (+47)</option>
+                        <option value="+45">الدنمارك (+45)</option>
+                        <option value="+358">فنلندا (+358)</option>
+                        <option value="+353">أيرلندا (+353)</option>
+                        <option value="+32">بلجيكا (+32)</option>
+                        <option value="+41">سويسرا (+41)</option>
+                        <option value="+43">النمسا (+43)</option>
+                        <option value="+30">اليونان (+30)</option>
+                        <option value="+351">البرتغال (+351)</option>
+                        <option value="+48">بولندا (+48)</option>
+                        <option value="+420">التشيك (+420)</option>
+                        <option value="+36">المجر (+36)</option>
+                        <option value="+40">رومانيا (+40)</option>
+                        <option value="+385">كرواتيا (+385)</option>
+                        <option value="+381">صربيا (+381)</option>
+                        <option value="+386">سلوفينيا (+386)</option>
+                        <option value="+370">ليتوانيا (+370)</option>
+                        <option value="+371">لاتفيا (+371)</option>
+                        <option value="+372">إستونيا (+372)</option>
+                        <option value="+359">بلغاريا (+359)</option>
+                        <option value="+380">أوكرانيا (+380)</option>
+                        <option value="+375">بيلاروسيا (+375)</option>
+                        <option value="+995">جورجيا (+995)</option>
+                        <option value="+994">أذربيجان (+994)</option>
+                        <option value="+996">قيرغيزستان (+996)</option>
+                        <option value="+992">طاجيكستان (+992)</option>
+                        <option value="+993">تركمانستان (+993)</option>
+                        <option value="+998">أوزبكستان (+998)</option>
+                        <option value="+855">كمبوديا (+855)</option>
+                        <option value="+856">لاوس (+856)</option>
+                        <option value="+673">بروناي (+673)</option>
+                        <option value="+679">فيجي (+679)</option>
+                        <option value="+685">ساموا (+685)</option>
+                        <option value="+687">كاليدونيا الجديدة (+687)</option>
+                        <option value="+689">بولينيزيا الفرنسية (+689)</option>
+                        <option value="+690">توكيلاو (+690)</option>
+                        <option value="+691">ميكرونيزيا (+691)</option>
+                        <option value="+692">جزر مارشال (+692)</option>
+                        <option value="+850">كوريا الشمالية (+850)</option>
+                        <option value="+852">هونغ كونغ (+852)</option>
+                        <option value="+853">ماكاو (+853)</option>
+                        <option value="+880">بنغلاديش (+880)</option>
+                        <option value="+886">تايوان (+886)</option>
+                        <option value="+90">تركيا (+90)</option>
+                        <option value="+92">باكستان (+92)</option>
+                        <option value="+93">أفغانستان (+93)</option>
+                        <option value="+94">سريلانكا (+94)</option>
+                        <option value="+95">ميانمار (+95)</option>
+                        <option value="+970">فلسطين (+970)</option>
+                        <option value="+972">إسرائيل (+972)</option>
+                        <option value="+975">بوتان (+975)</option>
+                        <option value="+976">منغوليا (+976)</option>
+                        <option value="+977">نيبال (+977)</option>
+                        <option value="+98">إيران (+98)</option>
+                        <option value="+212">المغرب (+212)</option>
+                        <option value="+213">الجزائر (+213)</option>
+                        <option value="+216">تونس (+216)</option>
+                        <option value="+218">ليبيا (+218)</option>
+                        <option value="+220">غامبيا (+220)</option>
+                        <option value="+221">السنغال (+221)</option>
+                        <option value="+222">موريتانيا (+222)</option>
+                        <option value="+223">مالي (+223)</option>
+                        <option value="+224">غينيا (+224)</option>
+                        <option value="+225">كوت ديفوار (+225)</option>
+                        <option value="+226">بوركينا فاسو (+226)</option>
+                        <option value="+227">النيجر (+227)</option>
+                        <option value="+228">توغو (+228)</option>
+                        <option value="+229">بنين (+229)</option>
+                        <option value="+230">موريشيوس (+230)</option>
+                        <option value="+231">ليبيريا (+231)</option>
+                        <option value="+232">سيراليون (+232)</option>
+                        <option value="+233">غانا (+233)</option>
+                        <option value="+234">نيجيريا (+234)</option>
+                        <option value="+235">تشاد (+235)</option>
+                        <option value="+236">جمهورية أفريقيا الوسطى (+236)</option>
+                        <option value="+237">الكاميرون (+237)</option>
+                        <option value="+238">الرأس الأخضر (+238)</option>
+                        <option value="+239">ساو تومي وبرينسيبي (+239)</option>
+                        <option value="+240">غينيا الاستوائية (+240)</option>
+                        <option value="+241">الغابون (+241)</option>
+                        <option value="+242">الكونغو (+242)</option>
+                        <option value="+243">جمهورية الكونغو الديمقراطية (+243)</option>
+                        <option value="+244">أنغولا (+244)</option>
+                        <option value="+245">غينيا بيساو (+245)</option>
+                        <option value="+246">دييغو غارسيا (+246)</option>
+                        <option value="+247">أansenشين (+247)</option>
+                        <option value="+248">سيشيل (+248)</option>
+                        <option value="+249">السودان (+249)</option>
+                        <option value="+250">رواندا (+250)</option>
+                        <option value="+251">إثيوبيا (+251)</option>
+                        <option value="+252">الصومال (+252)</option>
+                        <option value="+253">جيبوتي (+253)</option>
+                        <option value="+254">كينيا (+254)</option>
+                        <option value="+255">تنزانيا (+255)</option>
+                        <option value="+256">أوغندا (+256)</option>
+                        <option value="+257">بوروندي (+257)</option>
+                        <option value="+258">موزمبيق (+258)</option>
+                        <option value="+260">زامبيا (+260)</option>
+                        <option value="+261">مدغشقر (+261)</option>
+                        <option value="+262">ريونيون (+262)</option>
+                        <option value="+263">زيمبابوي (+263)</option>
+                        <option value="+264">ناميبيا (+264)</option>
+                        <option value="+265">مالاوي (+265)</option>
+                        <option value="+266">ليسوتو (+266)</option>
+                        <option value="+267">بوتسوانا (+267)</option>
+                        <option value="+268">سوازيلاند (+268)</option>
+                        <option value="+269">جزر القمر (+269)</option>
+                        <option value="+290">سانت هيلانة (+290)</option>
+                        <option value="+291">إريتريا (+291)</option>
+                        <option value="+297">أروبا (+297)</option>
+                        <option value="+298">جزر فارو (+298)</option>
+                        <option value="+299">جرينلاند (+299)</option>
+                        <option value="+350">جبل طارق (+350)</option>
+                        <option value="+352">لوكسمبورغ (+352)</option>
+                        <option value="+354">آيسلندا (+354)</option>
+                        <option value="+355">ألبانيا (+355)</option>
+                        <option value="+356">مالطا (+356)</option>
+                        <option value="+357">قبرص (+357)</option>
+                        <option value="+373">مولدوفا (+373)</option>
+                        <option value="+374">أرمينيا (+374)</option>
+                        <option value="+376">أندورا (+376)</option>
+                        <option value="+377">موناكو (+377)</option>
+                        <option value="+378">سان مارينو (+378)</option>
+                        <option value="+379">الفاتيكان (+379)</option>
+                        <option value="+382">الجبل الأسود (+382)</option>
+                        <option value="+387">البوسنة والهرسك (+387)</option>
+                        <option value="+389">مقدونيا الشمالية (+389)</option>
+                        <option value="+421">سلوفاكيا (+421)</option>
+                        <option value="+423">ليختنشتاين (+423)</option>
+                        <option value="+500">جزر فوكلاند (+500)</option>
+                        <option value="+501">بليز (+501)</option>
+                        <option value="+502">غواتيمالا (+502)</option>
+                        <option value="+503">السلفادور (+503)</option>
+                        <option value="+504">هندوراس (+504)</option>
+                        <option value="+505">نيكاراغوا (+505)</option>
+                        <option value="+506">كوستاريكا (+506)</option>
+                        <option value="+507">بنما (+507)</option>
+                        <option value="+508">سانت بيير وميكلون (+508)</option>
+                        <option value="+509">هايتي (+509)</option>
+                        <option value="+590">غوادلوب (+590)</option>
+                        <option value="+591">بوليفيا (+591)</option>
+                        <option value="+592">غيانا (+592)</option>
+                        <option value="+593">الإكوادور (+593)</option>
+                        <option value="+594">غويانا الفرنسية (+594)</option>
+                        <option value="+595">باراغواي (+595)</option>
+                        <option value="+596">مارتينيك (+596)</option>
+                        <option value="+597">سورينام (+597)</option>
+                        <option value="+598">أوروغواي (+598)</option>
+                        <option value="+599">جزر الأنتيل الهولندية (+599)</option>
+                        <option value="+670">تيمور الشرقية (+670)</option>
+                        <option value="+672">أنتاركتيكا (+672)</option>
+                        <option value="+674">ناورو (+674)</option>
+                        <option value="+675">بابوا غينيا الجديدة (+675)</option>
+                        <option value="+676">تونغا (+676)</option>
+                        <option value="+677">جزر سليمان (+677)</option>
+                        <option value="+678">فانواتو (+678)</option>
+                        <option value="+680">بالاو (+680)</option>
+                        <option value="+681">واليس وفوتونا (+681)</option>
+                        <option value="+682">جزر كوك (+682)</option>
+                        <option value="+683">نييوي (+683)</option>
+                        <option value="+684">ساموا الأمريكية (+684)</option>
+                        <option value="+686">كيريباتي (+686)</option>
+                        <option value="+688">توفالو (+688)</option>
+                    </select>
+                </div>
+                
+                <div class="phone-input">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" placeholder="أدخل رقم الهاتف" autocomplete="off">
+                </div>
+                
+                <button class="btn" id="nextBtn">التالي</button>
+            </div>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">الميزات الرئيسية</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>التشفير التام</h3>
-                    <p>جميع الرسائل مشفرة من طرف إلى طرف لضمان خصوصيتك وأمان معلوماتك</p>
+            <!-- Step 2: Verification Code -->
+            <div class="form-step" id="codeStep">
+                <a class="back-btn" id="backBtn">العودة</a>
+                <h2>التحقق من الرقم</h2>
+                
+                <div class="code-input">
+                    <p>أدخل رمز التحقق المكون من 6 أرقام الذي أرسلناه إلى <span id="phoneNumberDisplay"></span></p>
+                    <input type="text" id="verificationCode" maxlength="6" placeholder="______" autocomplete="off">
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>متعدد المنصات</h3>
-                    <p>استخدم واتساب على الهاتف والكمبيوتر والويب في نفس الوقت</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💬</div>
-                    <h3>المكالمات الصوتية والمرئية</h3>
-                    <p>قم بإجراء مكالمات مجانية عالية الجودة مع أصدقائك وعائلتك</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>نسخ احتياطي تلقائي</h3>
-                    <p>احفظ محادثاتك تلقائيًا على السحابة واسترجعها عند الحاجة</p>
-                </div>
+                
+                <div class="timer" id="timer">إعادة إرسال الرمز خلال: <span id="countdown">30</span> ثانية</div>
+                <a class="resend-link" id="resendLink">إعادة إرسال الرمز</a>
+                
+                <button class="btn" id="verifyBtn">التحقق</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Documentation Section -->
-    <section id="documentation" class="documentation">
-        <div class="container">
-            <h2 class="section-title">دليل التوثيق</h2>
-            <div class="docs-grid">
-                <div class="doc-item">
-                    <h4>البدء</h4>
-                    <p>تعلم كيفية تحميل واتساب وإعداد حسابك الأول</p>
-                </div>
-                <div class="doc-item">
-                    <h4>المحادثات</h4>
-                    <p>إدارة المحادثات، إنشاء المجموعات، وتنظيم جهات الاتصال</p>
-                </div>
-                <div class="doc-item">
-                    <h4>الوسائط</h4>
-                    <p>مشاركة الصور، الفيديوهات، المستندات، والمواقع الجغرافية</p>
-                </div>
-                <div class="doc-item">
-                    <h4>الأمان</h4>
-                    <p>إعدادات الخصوصية، التحقق بخطوتين، وحماية حسابك</p>
-                </div>
-                <div class="doc-item">
-                    <h4>الدفع</h4>
-                    <p>استخدام واتساب باي للتحويلات المالية الآمنة</p>
-                </div>
-                <div class="doc-item">
-                    <h4>الاستكشاف</h4>
-                    <p>حل المشاكل الشائعة وتحسين تجربة الاستخدام</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 class="section-title">الأسئلة الشائعة</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>كيف يمكنني تحميل واتساب؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>يمكنك تحميل واتساب من متجر التطبيقات الخاص بجهازك (App Store للآيفون أو Google Play للأندرويد). ابحث عن "WhatsApp Messenger" وقم بتثبيته مجانًا.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>هل واتساب مجاني للاستخدام؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نعم، واتساب مجاني تمامًا للاستخدام. لا توجد رسوم اشتراك أو تكاليف خفية. تحتاج فقط إلى اتصال بالإنترنت لاستخدام جميع الميزات.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>كيف أقوم بعمل نسخة احتياطية لمحادثاتي؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>انتقل إلى الإعدادات > المحادثات > النسخ الاحتياطي للمحادثات. يمكنك اختيار النسخ الاحتياطي على Google Drive (للأندرويد) أو iCloud (لـ iOS).</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>ما هو التشفير من طرف إلى طرف؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>التشفير من طرف إلى طرف يعني أن الرسائل تُشفّر على جهاز المرسِل وتُفك تشفيرها فقط على جهاز المستلم، مما يمنع أي طرف ثالث (بما في ذلك واتساب نفسه) من قراءة محتوى الرسائل.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>واتساب</h3>
-                    <p>تطبيق المراسلة الأكثر استخدامًا في العالم</p>
-                </div>
-                <div class="footer-section">
-                    <h3>روابط سريعة</h3>
-                    <ul>
-                        <li><a href="#features">الميزات</a></li>
-                        <li><a href="#documentation">التوثيق</a></li>
-                        <li><a href="#faq">الأسئلة الشائعة</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>الدعم</h3>
-                    <ul>
-                        <li><a href="#">مركز المساعدة</a></li>
-                        <li><a href="#">الخصوصية</a></li>
-                        <li><a href="#">الشروط</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>تابعنا</h3>
-                    <ul>
-                        <li><a href="#">فيسبوك</a></li>
-                        <li><a href="#">تويتر</a></li>
-                        <li><a href="#">إنستغرام</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 توثيق واتساب. هذا الموقع غير تابع لشركة ميتا أو واتساب.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="whatsapp-script.js"></script>
 </body>
-</html>
+    </html>
